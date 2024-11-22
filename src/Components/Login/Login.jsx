@@ -21,15 +21,15 @@ const Login = () => {
             <h1>Acesse o Sistema</h1>
 
             <div>
-            <input type="text" placeholder="E-mail" 
+            <input type="email" placeholder="E-mail" 
                 onChange={(e) => setUsername(e.target.value)}/> 
-                <FaUser className="icon" />
+                <FaUser className='icon' />
             </div>
 
             <div>
             <input type="password" placeholder="Senha"
                 onChange={(e) => setPassword(e.target.value)}/>
-                <FaLock className="icon" />
+                <FaLock className='icon' />
             </div>
 
             <div className="recall-forget">
@@ -48,7 +48,7 @@ const Login = () => {
         </form>
       
     </div>
-  )
-}
+  );
+};
 
 export default Login
